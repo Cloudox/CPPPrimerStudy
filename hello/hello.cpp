@@ -76,13 +76,22 @@ int compare(const T &v1, const T &v2) {
 	return 0;
 }
 
+template <typename T>
+void printT(std::vector<T> vec) {
+	std::vector<T>::iterator iter = vec.begin();
+	while (iter != vec.end()) {
+		std::cout << *iter << std::endl;
+		iter++;
+	}
+}
+
 
 int main() {
 	using std::string;
 	using namespace std;
 
-	Sales_data data1, data2;
-	cout << compare(data1, data2) << endl;
+	vector<int> vec = { 1,2,3,4,5,6 };
+	printT(vec);
 
 	//Quote q("ouxiao", 100);
 	//Bulk_Quote bq("cloudox", 100, 10, 0.9);
