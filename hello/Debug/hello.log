@@ -1,0 +1,13 @@
+﻿  hello.cpp
+c:\c++study\hello\hello\hello.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\c++study\hello\hello\hello.cpp(74): error C2678: 二进制“<”: 没有找到接受“const Sales_data”类型的左操作数的运算符(或没有可接受的转换)
+  c:\c++study\hello\hello\sales_item.h(52): note: 可能是“bool operator <(const Sales_item &,const Sales_item &)”
+  c:\c++study\hello\hello\hello.cpp(74): note: 尝试匹配参数列表“(const Sales_data, const Sales_data)”时
+  c:\c++study\hello\hello\hello.cpp(85): note: 参见对正在编译的函数 模板 实例化“int compare<Sales_data>(const T &,const T &)”的引用
+          with
+          [
+              T=Sales_data
+          ]
+c:\c++study\hello\hello\hello.cpp(75): error C2678: 二进制“<”: 没有找到接受“const Sales_data”类型的左操作数的运算符(或没有可接受的转换)
+  c:\c++study\hello\hello\sales_item.h(52): note: 可能是“bool operator <(const Sales_item &,const Sales_item &)”
+  c:\c++study\hello\hello\hello.cpp(75): note: 尝试匹配参数列表“(const Sales_data, const Sales_data)”时
